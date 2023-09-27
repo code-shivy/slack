@@ -11,13 +11,31 @@ def send_slack_alert(message):
 
 def hello_world():
     message1 = """
-    :large_green_circle: Hello World
+    :fire: Hello World
     """
 
     send_slack_alert(message1)
 
-    message2 = """ 
-    :red_circle: Error Hello World"""
+    message2 = """
+    :warning: Hello World
+    """
 
     send_slack_alert(message2)
+
+    message3 = """
+    :white_check_mark: Hello World
+    """
+
+    send_slack_alert(message3)
+
+    message4 = """ 
+    :red_circle: Error Hello World"""
+
+    send_slack_alert(message4)
+
+    message5 = """
+    :large_green_circle: Hello World
+    """
+    send_slack_alert(message5)
+    
 hello_world()
